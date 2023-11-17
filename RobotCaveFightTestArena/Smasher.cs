@@ -53,6 +53,8 @@ namespace RobotCaveFightTestArena
         public string GetStats()
         {
 
+            robotName = "Smasher";
+            studentNames = new string[] { "Reece", "Jason" };
             attack = 10;
             defense = 10;
             speed = 10;
@@ -84,10 +86,16 @@ namespace RobotCaveFightTestArena
             throw new NotImplementedException();
         }
 
-        public double GetAttack() => 0;
+        public double GetAttack()
+        {
+            return attack;
+        }
 
 
-        public double GetDefense() => 0;
+        public double GetDefense()
+        {
+            return defense;
+        }
 
 
 

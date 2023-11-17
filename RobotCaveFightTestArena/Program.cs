@@ -6,7 +6,8 @@
 			//TrainingDummy trainingDummy1 = new TrainingDummy();
 			Smasher smasher = new Smasher();
 
-			//Console.WriteLine(smasher.GetStats());
+			Console.WriteLine(smasher.GetStats());
+			Console.WriteLine(smasher.GetRobotName());
 
 
 			//Create a new arena
