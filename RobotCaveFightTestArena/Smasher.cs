@@ -71,14 +71,34 @@ namespace RobotCaveFightTestArena
             return studentNames;
         }
 
-        public ActionResult PerformAction(IRobot opponent)
-        {
-            throw new NotImplementedException();
-        }
+        //public ActionResult PerformAction(IRobot opponent)
+        //{
+            //Random random = new Random();
+
+            // Generate a random number between 1 and 4
+            //int randomNumber = random.Next(1, 5);
+
+            //switch (randomNumber)
+            //{
+            //    case 1:
+            //        explosiveDiahrea(5);
+            //        break;
+            //    case 2:
+            //        faceSlap(5);
+            //        break;
+            //    default:
+            //        break;
+
+            //}
+        //}
 
         public void Reset()
         {
-            throw new NotImplementedException();
+            attack = default(double);
+            defense = default(double);
+            speed = default(double);
+            constitution = default(double);
+            health = default(double);
         }
 
         public void TakeDamage(double damage)
@@ -96,6 +116,23 @@ namespace RobotCaveFightTestArena
         {
             return defense;
         }
+
+        //public static double explosiveDiahrea(double damage)
+        //{
+        //    Smasher smasher = new Smasher();
+
+        //    ActionResult result = new ActionResult();
+
+        //    result.ActionName = "Explosive Diahrea";
+        //    result.AnimationName = "Punch";
+
+        //    damage = .8 * smasher.attack + .2 * smasher.defense;
+
+        //    //return damage;
+        //    return result;
+        //}
+
+
 
 
 
