@@ -101,8 +101,8 @@ namespace RobotCaveFightTestArena
 
             if (randomNumber <= 50)
             {
-               return Attack(opponent);
-               
+                return BasicAttack(opponent);
+
             }
             else if (randomNumber <= 80)
             {
@@ -115,44 +115,46 @@ namespace RobotCaveFightTestArena
 
         }
 
-        public ActionResult Attack(IRobot opponent)
+        public global::ActionResult BasicAttack(IRobot opponent)
         {
             opponent.TakeDamage(attack);
-            return new ActionResult
+            return new global::ActionResult
             {
                 ActionName = "Attack",
                 ActionAnimation = "Punch"
             };
         }
 
-        public ActionResult ExplosiveDiarrhea(IRobot opponent)
+        public global::ActionResult ExplosiveDiarrhea(IRobot opponent)
         {
             double damage = 0.6 * attack + 0.4 * defense;
             opponent.TakeDamage(damage);
-            return new ActionResult
+            return new global::ActionResult
             {
                 ActionName = "Explosive Diarrhea",
                 ActionAnimation = "Power Up"
             };
         }
 
-        public ActionResult SuckFace(IRobot opponent)
+        public global::ActionResult SuckFace(IRobot opponent)
         {
             double healthRegained = 3 * (health - speed);
             health += healthRegained;
             speed -= 2.5;
-            return new ActionResult
+            return new global::ActionResult
             {
                 ActionName = "Suck Face",
                 ActionAnimation = "Heal"
             };
         }
-
+                
     }
 
     public class ActionResult
     {
         public string ActionName { get; set; }
         public string ActionAnimation { get; set; }
+
     }
+
 }

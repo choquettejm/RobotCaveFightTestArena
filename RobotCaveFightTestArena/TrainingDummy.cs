@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace RobotCaveFightTestArena {
 	internal class TrainingDummy : IRobot {
+
+		public double attack = 10;
+		public double defense = 10;
+		public double speed = 10;
+		public double constitution = 10;
+
 		double health = 100;
 		public double GetHealth() => health;
 
@@ -17,9 +23,12 @@ namespace RobotCaveFightTestArena {
 
 		public string GetRobotName() => "Training Dummy";
 
-		public double GetSpeed() => 0;
+		public double GetSpeed() => 10;
 
-		public string GetStats() => "No stats, dummy!";
+		public string GetStats()
+		{
+			return $"Current Health: {health}, Attack: {attack}, Defense: {defense}, Speed: {speed}.";
+		}
 
 		public string[] GetStudentNames() => new string[] { "Training", "Dummy" };
 
@@ -29,9 +38,10 @@ namespace RobotCaveFightTestArena {
 
 		public void TakeDamage(double damage) => health -= damage;
 
-		public double GetAttack() => 0;
+		public double GetAttack() => 5;
 
+		public double GetDefense() => 4;
 
-		public double GetDefense() => 0;
+        
     }
 }
