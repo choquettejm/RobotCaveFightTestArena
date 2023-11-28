@@ -6,135 +6,153 @@ using System.Threading.Tasks;
 
 namespace RobotCaveFightTestArena
 {
-    internal class Smasher : IRobot
+    public class Smasher : IRobot
     {
-        public string robotName { get; set; }
-        public string[] studentNames { get; set; }
-        public double attack { get; set; }
-        public double defense { get; set; }
-        public double speed { get; set; }
-        public double constitution { get; set; }
-        public double health { get; set; }
-        public string primaryColor { get; set; }
-        public string secondaryColor { get; set; }
+        public string robotName { get; private set; }
+        public string[] studentNames { get; private set; }
+        public double attack { get; private set; }
+        public double defense { get; private set; }
+        public double speed { get; private set; }
+        public double constitution { get; private set; }
+        public double health { get; private set; }
+        public string primaryColor { get; private set; }
+        public string secondaryColor { get; private set; }
 
-
-
-        public double GetHealth()
+        public Smasher()
         {
-            return GetMaxHealth();
-        }
-
-        public double GetMaxHealth()
-        {
-            return 10 * constitution;
-        }
-
-        public string GetPrimaryColor()
-        {
-            return primaryColor;
-        }
-
-        public string GetRobotName()
-        {
-            return robotName;
-        }
-
-        public string GetSecondaryColor()
-        {
-            return secondaryColor;
-        }
-
-        public double GetSpeed()
-        {
-            return speed;   
-        }
-
-        public string GetStats()
-        {
-
             robotName = "Smasher";
-            studentNames = new string[] { "Reece", "Jason" };
+            studentNames = new string[] { "Training", "Dummy" };
             attack = 10;
             defense = 10;
             speed = 10;
             constitution = 10;
             health = 10 * constitution;
-            primaryColor = "";
-            secondaryColor = "";
-
-            return ($"Current Health: {health}, Attack: { attack}, Defense: { defense}, Speed: { speed}");
+            primaryColor = "#0000FF";  //Blue
+            secondaryColor = "#FFFF00";  //Yellow
         }
 
-        public string[] GetStudentNames()
+        string IRobot.GetRobotName()
+        {
+            return robotName;
+        }
+
+        void IRobot.Reset()
+        {
+            attack = 10;
+            defense = 10;
+            speed = 10;
+            constitution = 10;
+            health = 10 * constitution;
+        }
+
+        string[] IRobot.GetStudentNames()
         {
             return studentNames;
         }
-
-        //public ActionResult PerformAction(IRobot opponent)
-        //{
-            //Random random = new Random();
-
-            // Generate a random number between 1 and 4
-            //int randomNumber = random.Next(1, 5);
-
-            //switch (randomNumber)
-            //{
-            //    case 1:
-            //        explosiveDiahrea(5);
-            //        break;
-            //    case 2:
-            //        faceSlap(5);
-            //        break;
-            //    default:
-            //        break;
-
-            //}
-        //}
-
-        public void Reset()
-        {
-            attack = default(double);
-            defense = default(double);
-            speed = default(double);
-            constitution = default(double);
-            health = default(double);
-        }
-
-        public void TakeDamage(double damage)
-        {
-            throw new NotImplementedException();
-        }
-
-        public double GetAttack()
+        double IRobot.GetAttack()
         {
             return attack;
         }
 
-
-        public double GetDefense()
+        double IRobot.GetDefense()
         {
             return defense;
         }
+        string IRobot.GetStats()
+        {
+            return $"Current Health: {health}, Attack: {attack}, Defense: {defense}, Speed: {speed}.";
+        }
 
-        //public static double explosiveDiahrea(double damage)
-        //{
-        //    Smasher smasher = new Smasher();
+        double IRobot.GetSpeed()
+        {
+            return speed;
+        }
 
-        //    ActionResult result = new ActionResult();
+        double IRobot.GetHealth()
+        {
+            return health;
+        }
 
-        //    result.ActionName = "Explosive Diahrea";
-        //    result.AnimationName = "Punch";
+        double IRobot.GetMaxHealth()
+        {
+            return 10 * constitution;
+        }
 
-        //    damage = .8 * smasher.attack + .2 * smasher.defense;
+        string IRobot.GetPrimaryColor()
+        {
+            return primaryColor;
+        }
 
-        //    //return damage;
-        //    return result;
-        //}
+        string IRobot.GetSecondaryColor()
+        {
+            return secondaryColor;
+        }
 
+        void IRobot.TakeDamage(double damage)
+        {
+            double damageDealt = damage - (defense / 100 * damage);
+            health -= damageDealt;
+        }
 
+        global::ActionResult IRobot.PerformAction(IRobot opponent)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(1, 101);
 
+            if (randomNumber <= 50)
+            {
+               return Attack(opponent);
+               
+            }
+            else if (randomNumber <= 80)
+            {
+                return ExplosiveDiarrhea(opponent);
+            }
+            else
+            {
+                return SuckFace(opponent);
+            }
 
+        }
 
+        public ActionResult Attack(IRobot opponent)
+        {
+            opponent.TakeDamage(attack);
+            return new ActionResult
+            {
+                ActionName = "Attack",
+                ActionAnimation = "Punch"
+            };
+        }
+
+        public ActionResult ExplosiveDiarrhea(IRobot opponent)
+        {
+            double damage = 0.6 * attack + 0.4 * defense;
+            opponent.TakeDamage(damage);
+            return new ActionResult
+            {
+                ActionName = "Explosive Diarrhea",
+                ActionAnimation = "Power Up"
+            };
+        }
+
+        public ActionResult SuckFace(IRobot opponent)
+        {
+            double healthRegained = 3 * (health - speed);
+            health += healthRegained;
+            speed -= 2.5;
+            return new ActionResult
+            {
+                ActionName = "Suck Face",
+                ActionAnimation = "Heal"
+            };
+        }
+
+    }
+
+    public class ActionResult
+    {
+        public string ActionName { get; set; }
+        public string ActionAnimation { get; set; }
     }
 }

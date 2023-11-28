@@ -3,15 +3,15 @@
 		static void Main(string[] args) {
 			//Create bots
 			TrainingDummy trainingDummy = new TrainingDummy();
-			//TrainingDummy trainingDummy1 = new TrainingDummy();
-			Smasher smasher = new Smasher();
+			TrainingDummy trainingDummy1 = new TrainingDummy();
+			//Smasher smasher = new Smasher();
 
-			Console.WriteLine(smasher.GetStats());
-			Console.WriteLine(smasher.GetRobotName());
+			Console.WriteLine(trainingDummy.GetStats());
+			Console.WriteLine(trainingDummy.GetRobotName());
 
 
 			//Create a new arena
-			Arena arena = new Arena(trainingDummy, smasher);
+			Arena arena = new Arena(trainingDummy, trainingDummy1);
 
 			arena.RunBattle();
 		}

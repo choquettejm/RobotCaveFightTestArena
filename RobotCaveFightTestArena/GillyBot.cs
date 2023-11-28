@@ -67,5 +67,10 @@ namespace RobotCaveFightTestArena
 
 
         public double GetDefense() => 0;
+
+        global::ActionResult IRobot.PerformAction(IRobot opponent)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
