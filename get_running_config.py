@@ -2,8 +2,8 @@ from ncclient import manager
 import os
 
 wlcip = os.environ['WLC_IP']
-Username = os.environ['Username']
-Pwd = os.environ['Password']
+#Username = os.environ['Username']
+#Pwd = os.environ['Password']
 
 print(wlcip)
 
