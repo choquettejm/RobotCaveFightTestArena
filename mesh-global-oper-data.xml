@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mesh-global-oper-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-wireless-mesh-global-oper">        
+    <mesh-ap-tree-data>
+      <mesh-ap-list>
+        <ap-name>ntl-capRoot9124</ap-name>
+        <ap-role>ap-role-root</ap-role>
+        <bridge-group-name>9124mesh</bridge-group-name>
+        <pref-parent-ap-name>0000.0000.0000</pref-parent-ap-name>
+        <depth>0</depth>
+        <link-snr>0</link-snr>
+        <curr-freq>0</curr-freq>
+        <chan-util>6</chan-util>
+        <clients-count>0</clients-count>
+        <not-in-this-wlc>false</not-in-this-wlc>
+        <parent-info-not-avail>false</parent-info-not-avail>
+      </mesh-ap-list>
+      <mesh-ap-list>
+        <ap-name>ntl-capMesh9124</ap-name>
+        <ap-role>ap-role-mesh</ap-role>
+        <bridge-group-name>9124mesh</bridge-group-name>
+        <pref-parent-ap-name>0000.0000.0000</pref-parent-ap-name>
+        <depth>1</depth>
+        <link-snr>41</link-snr>
+        <curr-freq>0</curr-freq>
+        <chan-util>11</chan-util>
+        <clients-count>0</clients-count>
+        <not-in-this-wlc>false</not-in-this-wlc>
+        <parent-info-not-avail>false</parent-info-not-avail>
+      </mesh-ap-list>
+    </mesh-ap-tree-data>
+  </mesh-global-oper-data>
+</data>
