@@ -1,0 +1,39 @@
+{
+  "data": {
+    "@xmlns": "urn:ietf:params:xml:ns:netconf:base:1.0",
+    "@xmlns:nc": "urn:ietf:params:xml:ns:netconf:base:1.0",
+    "mesh-global-oper-data": {
+      "@xmlns": "http://cisco.com/ns/yang/Cisco-IOS-XE-wireless-mesh-global-oper",
+      "mesh-ap-tree-data": {
+        "mesh-ap-list": [
+          {
+            "ap-name": "ntl-capRoot9124",
+            "ap-role": "ap-role-root",
+            "bridge-group-name": "9124mesh",
+            "pref-parent-ap-name": "0000.0000.0000",
+            "depth": "0",
+            "link-snr": "0",
+            "curr-freq": "0",
+            "chan-util": "5",
+            "clients-count": "0",
+            "not-in-this-wlc": "false",
+            "parent-info-not-avail": "false"
+          },
+          {
+            "ap-name": "ntl-capMesh9124",
+            "ap-role": "ap-role-mesh",
+            "bridge-group-name": "9124mesh",
+            "pref-parent-ap-name": "0000.0000.0000",
+            "depth": "1",
+            "link-snr": "41",
+            "curr-freq": "0",
+            "chan-util": "15",
+            "clients-count": "0",
+            "not-in-this-wlc": "false",
+            "parent-info-not-avail": "false"
+          }
+        ]
+      }
+    }
+  }
+}
