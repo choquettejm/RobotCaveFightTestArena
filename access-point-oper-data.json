@@ -1,4 +1,10 @@
-[
+{
+  "data": {
+    "@xmlns": "urn:ietf:params:xml:ns:netconf:base:1.0",
+    "@xmlns:nc": "urn:ietf:params:xml:ns:netconf:base:1.0",
+    "access-point-oper-data": {
+      "@xmlns": "http://cisco.com/ns/yang/Cisco-IOS-XE-wireless-access-point-oper",
+      "cdp-cache-data": [
         {
           "mac-addr": "48:91:d5:37:1f:00",
           "cdp-cache-device-id": "ntlcsa9300.emn.com",
@@ -91,4 +97,7 @@
           "wtp-mac-addr": "c8:28:e5:7a:98:a0",
           "device-index": "1"
         }
-]
+      ]
+    }
+  }
+}
