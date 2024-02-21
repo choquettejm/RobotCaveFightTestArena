@@ -1,0 +1,94 @@
+[
+        {
+          "mac-addr": "48:91:d5:37:1f:00",
+          "cdp-cache-device-id": "ntlcsa9300.emn.com",
+          "ap-name": "AP6849.92B9.5B50",
+          "last-updated-time": "2024-02-21T14:09:33.950576+00:00",
+          "version": "2",
+          "cdp-cache-if-index": "1",
+          "cdp-cache-version": "Cisco IOS Software [Amsterdam], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.3.4, RELEASE SOFTWARE (fc3)\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Sat 03-Jul-21 01:55 by mcpre",
+          "cdp-cache-device-port": "GigabitEthernet1/0/5",
+          "cdp-cache-local-port": "GigabitEthernet0",
+          "cdp-cache-platform": "cisco C9300L-24P-4G",
+          "cdp-capabilities-string": "Switch IGMP",
+          "cdp-cache-ap-address": "10.46.61.181",
+          "cdp-addr-count": "1",
+          "cdp-cache-ip-address-value": "10.46.60.7",
+          "ip-address": {
+            "ip-address-value": "10.46.60.7"
+          },
+          "cdp-cache-duplex": "cdp-cache-duplex-full",
+          "cdp-cache-interface-speed": "4",
+          "wtp-mac-addr": "48:91:d5:37:1f:00",
+          "device-index": "1"
+        },
+        {
+          "mac-addr": "90:e9:5e:db:20:e0",
+          "cdp-cache-device-id": "ntlcsa9300.emn.com",
+          "ap-name": "ntl-capRoot9124",
+          "last-updated-time": "2024-02-21T14:09:32.166856+00:00",
+          "version": "2",
+          "cdp-cache-if-index": "1",
+          "cdp-cache-version": "Cisco IOS Software [Amsterdam], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.3.4, RELEASE SOFTWARE (fc3)\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Sat 03-Jul-21 01:55 by mcpre",
+          "cdp-cache-device-port": "GigabitEthernet1/0/6",
+          "cdp-cache-local-port": "GigabitEthernet0",
+          "cdp-cache-platform": "cisco C9300L-24P-4G",
+          "cdp-capabilities-string": "Switch IGMP",
+          "cdp-cache-ap-address": "10.46.61.185",
+          "cdp-addr-count": "1",
+          "cdp-cache-ip-address-value": "10.46.60.7",
+          "ip-address": {
+            "ip-address-value": "10.46.60.7"
+          },
+          "cdp-cache-duplex": "cdp-cache-duplex-full",
+          "cdp-cache-interface-speed": "4",
+          "wtp-mac-addr": "90:e9:5e:db:20:e0",
+          "device-index": "1"
+        },
+        {
+          "mac-addr": "c8:28:e5:75:0f:e0",
+          "cdp-cache-device-id": "ntlcsa9300.emn.com",
+          "ap-name": "APC828.E51D.8054",
+          "last-updated-time": "2024-02-21T14:09:35.41032+00:00",
+          "version": "2",
+          "cdp-cache-if-index": "1",
+          "cdp-cache-version": "Cisco IOS Software [Amsterdam], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.3.4, RELEASE SOFTWARE (fc3)\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Sat 03-Jul-21 01:55 by mcpre",
+          "cdp-cache-device-port": "GigabitEthernet1/0/2",
+          "cdp-cache-local-port": "GigabitEthernet0",
+          "cdp-cache-platform": "cisco C9300L-24P-4G",
+          "cdp-capabilities-string": "Switch IGMP",
+          "cdp-cache-ap-address": "10.46.61.182",
+          "cdp-addr-count": "1",
+          "cdp-cache-ip-address-value": "10.46.60.7",
+          "ip-address": {
+            "ip-address-value": "10.46.60.7"
+          },
+          "cdp-cache-duplex": "cdp-cache-duplex-full",
+          "cdp-cache-interface-speed": "4",
+          "wtp-mac-addr": "c8:28:e5:75:0f:e0",
+          "device-index": "1"
+        },
+        {
+          "mac-addr": "c8:28:e5:7a:98:a0",
+          "cdp-cache-device-id": "ntlcsa9300.emn.com",
+          "ap-name": "ntl-cap9120-01",
+          "last-updated-time": "2024-02-21T14:09:08.91803+00:00",
+          "version": "2",
+          "cdp-cache-if-index": "1",
+          "cdp-cache-version": "Cisco IOS Software [Amsterdam], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.3.4, RELEASE SOFTWARE (fc3)\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Sat 03-Jul-21 01:55 by mcpre",
+          "cdp-cache-device-port": "GigabitEthernet1/0/1",
+          "cdp-cache-local-port": "GigabitEthernet0",
+          "cdp-cache-platform": "cisco C9300L-24P-4G",
+          "cdp-capabilities-string": "Switch IGMP",
+          "cdp-cache-ap-address": "10.46.61.184",
+          "cdp-addr-count": "1",
+          "cdp-cache-ip-address-value": "10.46.60.7",
+          "ip-address": {
+            "ip-address-value": "10.46.60.7"
+          },
+          "cdp-cache-duplex": "cdp-cache-duplex-full",
+          "cdp-cache-interface-speed": "4",
+          "wtp-mac-addr": "c8:28:e5:7a:98:a0",
+          "device-index": "1"
+        }
+]
