@@ -1,5 +1,4 @@
-<mesh-global-oper-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-wireless-mesh-global-oper">        
-    <mesh-ap-tree-data>
+<mesh-ap-tree-data>
       <mesh-ap-list>
         <ap-name>ntl-capRoot9124</ap-name>
         <ap-role>ap-role-root</ap-role>
@@ -26,5 +25,4 @@
         <not-in-this-wlc>false</not-in-this-wlc>
         <parent-info-not-avail>false</parent-info-not-avail>
       </mesh-ap-list>
-    </mesh-ap-tree-data>
-</mesh-global-oper-data>
+</mesh-ap-tree-data>
